@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú Semanal para Perder Peso</title>
+  <link rel="manifest" href="manifest.json">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 1em;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #00695c;
+    }
+    .section {
+      margin-bottom: 2em;
+    }
+    .day {
+      background-color: #e0f2f1;
+      padding: 1em;
+      border-radius: 10px;
+      margin-bottom: 1em;
+    }
+    ul {
+      padding-left: 1.2em;
+    }
+    li {
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Menú Semanal</h1>
+
+  <div class="section">
+    <h2>Lunes a Jueves</h2>
+    <div class="day">
+      <strong>Desayuno:</strong>
+      <ul>
+        <li>Café americano</li>
+        <li>1 yogur natural sin azúcar o huevo duro</li>
+        <li>1 fruta (manzana, pera, kiwi)</li>
+      </ul>
+      <strong>Media mañana (opcional):</strong>
+      <ul>
+        <li>10-12 frutos secos o 1 yogur natural</li>
+      </ul>
+      <strong>Comida:</strong>
+      <ul>
+        <li>Ensalada + atún/caballa/huevo/garbanzos + verduras + aceite</li>
+        <li>Fruta o yogur</li>
+      </ul>
+      <strong>Cena:</strong>
+      <ul>
+        <li>Ensalada + proteína (mejillones, queso fresco, huevo)</li>
+        <li>1 fruta</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Viernes a Domingo</h2>
+    <div class="day">
+      <strong>Desayuno:</strong>
+      <ul>
+        <li>Café + yogur + fruta o tostada integral con aguacate</li>
+      </ul>
+      <strong>Comida:</strong>
+      <ul>
+        <li>Viernes: Pollo al horno con verduras</li>
+        <li>Sábado: Lentejas con verduras</li>
+        <li>Domingo: Pescado al horno con ensalada</li>
+      </ul>
+      <strong>Cena:</strong>
+      <ul>
+        <li>Viernes: Ensalada + tortilla francesa</li>
+        <li>Sábado: Crema de calabacín + huevo cocido</li>
+        <li>Domingo: Verduras salteadas + queso fresco</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Lista de la compra</h2>
+    <ul>
+      <li><strong>Verduras y hortalizas:</strong> lechuga, tomate, zanahoria, pepino, cebolla, pimiento, calabacín, espárragos en conserva</li>
+      <li><strong>Conservas:</strong> atún, caballa, mejillones, garbanzos, lentejas, maíz, aceitunas</li>
+      <li><strong>Proteínas:</strong> huevos, pollo, pescado blanco, queso fresco, tofu</li>
+      <li><strong>Lácteos:</strong> yogures naturales, leche (opcional)</li>
+      <li><strong>Otros:</strong> pan integral, aguacate</li>
+      <li><strong>Frutas:</strong> kiwi, manzana, pera, fruta de temporada</li>
+      <li><strong>Snacks:</strong> frutos secos naturales</li>
+    </ul>
+  </div>
+</body>
+</html>
